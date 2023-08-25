@@ -9,7 +9,8 @@ import {
   OnInit,
   ViewContainerRef,
 } from '@angular/core';
-import { debounceTime, fromEvent, Subscription } from 'rxjs';
+import { fromEvent, Subscription } from 'rxjs';
+import { debounceTime } from 'rxjs/operators';
 import { NgFlowchart } from './model/flow.model';
 import { CONSTANTS } from './model/flowchart.constants';
 import { NgFlowchartCanvasService } from './ng-flowchart-canvas.service';
